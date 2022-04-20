@@ -302,8 +302,7 @@ The `data-bs-ride="carousel"` attribute is used to mark a carousel as animating 
 Call carousel manually with:
 
 ```js
-var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel)
+const carousel = new bootstrap.Carousel('#myCarousel')
 ```
 
 ### Options
@@ -330,8 +329,8 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 You can create a carousel instance with the carousel constructor, for example, to initialize with additional options and start cycling through items:
 
 ```js
-var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel, {
+const myCarouselElement = document.querySelector('#myCarousel')
+const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 2000,
   wrap: false
 })
@@ -370,9 +369,9 @@ All carousel events are fired at the carousel itself (i.e. at the `<div class="c
 {{< /bs-table >}}
 
 ```js
-var myCarousel = document.getElementById('myCarousel')
+const myCarousel = document.getElementById('myCarousel')
 
-myCarousel.addEventListener('slide.bs.carousel', function () {
+myCarousel.addEventListener('slide.bs.carousel', event => {
   // do something...
 })
 ```

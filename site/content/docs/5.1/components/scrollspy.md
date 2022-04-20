@@ -305,7 +305,7 @@ To easily add scrollspy behavior to your topbar navigation, add `data-bs-spy="sc
 ### Via JavaScript
 
 ```js
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: '#navbar-example'
 })
 ```
@@ -355,10 +355,9 @@ To keep backwards compatibility, we will continue to parse a given `offset` to `
 Here's an example using the refresh method:
 
 ```js
-var dataSpyList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
-dataSpyList.forEach(function (dataSpyEl) {
-  bootstrap.ScrollSpy.getInstance(dataSpyEl)
-    .refresh()
+const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
+dataSpyList.forEach(dataSpyEl => {
+  bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
 })
 ```
 
@@ -371,8 +370,8 @@ dataSpyList.forEach(function (dataSpyEl) {
 {{< /bs-table >}}
 
 ```js
-var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
-firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function () {
+const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
   // do something...
 })
 ```
