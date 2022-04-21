@@ -117,32 +117,32 @@ Scrollspy also works with nested `.nav`s. If a nested `.nav` is `.active`, its p
     <div class="col-8">
       <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" class="scrollspy-example-2" tabindex="0">
         <div id="item-1">
-            <h4>Item 1</h4>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4>Item 1</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         </div>
         <div id="item-1-1">
-            <h5>Item 1-1</h5>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h5>Item 1-1</h5>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         </div>
         <div id="item-1-2">
-            <h5>Item 1-2</h5>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h5>Item 1-2</h5>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         </div>
         <div id="item-2">
-            <h4>Item 2</h4>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4>Item 2</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         </div>
         <div id="item-3">
-            <h4>Item 3</h4>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4>Item 3</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         </div>
         <div id="item-3-1">
-            <h5>Item 3-1</h5>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h5>Item 3-1</h5>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         </div>
         <div id="item-3-2">
-            <h5>Item 3-2</h5>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h5>Item 3-2</h5>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         </div>
       </div>
     </div>
@@ -168,20 +168,34 @@ Scrollspy also works with nested `.nav`s. If a nested `.nav` is `.active`, its p
 </nav>
 
 <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
-  <h4 id="item-1">Item 1</h4>
-  <p>...</p>
-  <h5 id="item-1-1">Item 1-1</h5>
-  <p>...</p>
-  <h5 id="item-1-2">Item 1-2</h5>
-  <p>...</p>
-  <h4 id="item-2">Item 2</h4>
-  <p>...</p>
-  <h4 id="item-3">Item 3</h4>
-  <p>...</p>
-  <h5 id="item-3-1">Item 3-1</h5>
-  <p>...</p>
-  <h5 id="item-3-2">Item 3-2</h5>
-  <p>...</p>
+  <div id="item-1">
+    <h4>Item 1</h4>
+    <p>...</p>
+  </div>
+  <div id="item-1-1">
+    <h5>Item 1-1</h5>
+    <p>...</p>
+  </div>
+  <div id="item-1-2">
+    <h5>Item 1-2</h5>
+    <p>...</p>
+  </div>
+  <div id="item-2">
+    <h4>Item 2</h4>
+    <p>...</p>
+  </div>
+  <div id="item-3">
+    <h4>Item 3</h4>
+    <p>...</p>
+  </div>
+  <div id="item-3-1">
+    <h5>Item 3-1</h5>
+    <p>...</p>
+  </div>
+  <div id="item-3-2">
+    <h5>Item 3-2</h5>
+    <p>...</p>
+  </div>
 </div>
 ```
 
@@ -324,7 +338,9 @@ Target elements that are not visible will be ignored and their corresponding nav
 
 ### Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-bs-`, as in `data-bs-root-margin=""`.
+{{< markdown >}}
+{{< partial "js-data-attributes.md" >}}
+{{< /markdown >}}
 
 {{< bs-table "table" >}}
 | Name | Type | Default | Description |
